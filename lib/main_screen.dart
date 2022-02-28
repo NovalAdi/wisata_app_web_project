@@ -9,7 +9,7 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title: Text('place. Size: ${MediaQuery.of(context).size.width}')),
+            title: Text('Wisata Wisata')),
         body: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints constraints) {
             if (constraints.maxWidth <= 600) {
