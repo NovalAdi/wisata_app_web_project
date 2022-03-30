@@ -8,19 +8,19 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-            title: Text('Wisata Wisata')),
-        body: LayoutBuilder(
-          builder: (BuildContext context, BoxConstraints constraints) {
-            if (constraints.maxWidth <= 600) {
-              return ListWisata();
-            } else if (constraints.maxWidth <= 1200) {
-              return GridWisata(gridCount: 4);
-            } else {
-              return GridWisata(gridCount: 6);
-            }
-          },
-        ));
+      appBar: AppBar(title: Text('Wisata Wisata')),
+      body: LayoutBuilder(
+        builder: (BuildContext context, BoxConstraints constraints) {
+          if (constraints.maxWidth <= 600) {
+            return ListWisata();
+          } else if (constraints.maxWidth <= 1200) {
+            return GridWisata(gridCount: 4);
+          } else {
+            return GridWisata(gridCount: 6);
+          }
+        },
+      ),
+    );
   }
 }
 
